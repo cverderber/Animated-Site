@@ -1,0 +1,104 @@
+.content, .wrapper:before {
+  box-sizing: border-box;
+  display: block;
+  font-size: 7em;
+  padding: 0em;
+  width: 3em;
+  height: 3em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.content {
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+  background: black;
+  color: #000;
+  mix-blend-mode: lighten;
+}
+
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  isolation: isolate;
+  position: relative;
+  height: 100vh;
+  padding: 1em;
+}
+
+.wrapper {
+  clip: rect(auto auto auto auto);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wrapper:before {
+  content: " ";
+  padding: 2em 3.5em;
+  mix-blend-mode: darken;
+}
+
+.zero {
+  background-image: url("Pics/coleverderber.png");
+}
+.zero .wrapper:before {
+  background: white;
+  mix-blend-mode: difference;
+}
+
+.filterDiff {
+    mix-blend-mode: difference;
+}
+
+.overlap {
+    z-index: 1;
+}
+
+.overlap2 {
+    z-index: 2;
+}
+.one {
+  background-image: url("Pics/Misty.gif");
+}
+.one .wrapper:before {
+  background: rgba(255, 255, 0, 0);
+  mix-blend-mode: difference;
+}
+
+.two {
+  background-image: url("Pics/Cody.png");
+}
+.two .wrapper:before {
+  background: #FF0066;
+  mix-blend-mode: difference;
+}
+
+.three {
+  background-image: url("Pics/Beast1.png");
+}
+.three .wrapper:before {
+  background: #0099FF;
+  mix-blend-mode: difference;
+}
+
+.four {
+  background-image: url("Pics/TuckerCouch.png");
+}
+.four .wrapper:before {
+  background: rgba(255, 108, 0, 0.76);
+  mix-blend-mode: difference;
+}
+
+.five {
+	background-image: url("Pics/Mike-Kittens.png");
+}
+.five .wrapper:before {
+	background: rgba(153, 51, 255, 0);
+	mix-blend-mode: difference;
+}
